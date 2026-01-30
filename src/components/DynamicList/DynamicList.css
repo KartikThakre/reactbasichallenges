@@ -1,0 +1,37 @@
+.dynamicListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dynamicListContainer ul{
+    width: 300px;
+    padding: 0;
+}
+
+.inputLebel{
+    font-size: 18px;
+     padding: 8px 16px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.addButton{
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.inputList{
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
