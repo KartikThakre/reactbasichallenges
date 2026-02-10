@@ -8,7 +8,8 @@ const DynamicList = () => {
 
     const handleAddItem = () => {
         if(inputValue.trim() !== "") {
-            setItems([...items, { id: Date.now(), text: inputValue.trim() }]);
+            const newItem = [...items, { id: Date.now(), text: inputValue.trim() }]
+            setItems(newItem);
             setInputValue("");
         }
         console.log(items, inputValue);
@@ -16,6 +17,7 @@ const DynamicList = () => {
 
     const handleDeleteItem = (id) => {
         const newItems = items.filter(item => item.id !== id);
+        console.log(newItems);
         setItems(newItems);
     }
 

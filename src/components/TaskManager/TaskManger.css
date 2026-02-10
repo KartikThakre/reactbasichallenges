@@ -1,0 +1,56 @@
+.task-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.task-Container label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-Container input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.task-Container button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.task-Container ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.task-Container li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    width: 300px;
+}
+
+.status-completed {
+    color: green;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: red;
+    font-weight: bold;
+}

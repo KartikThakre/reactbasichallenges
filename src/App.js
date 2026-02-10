@@ -6,8 +6,9 @@ import FormValidation from "./components/FormValidation/FormValidation";
 import CountDown from "./components/CountDown/CountDown";
 import CounterLimits from "./components/CounterLimits/CounterLimits";
 import Tabs from "./components/Tabs/Tabs";
-//import TogglePassword from "./components/TogglePassword/TogglePassword";
-//import ConditionalUI from "./components/ConditionalUI/ConditionalUI";
+import TogglePassword from "./components/TogglePassword/TogglePassword";
+import ConditionalUI from "./components/ConditionalUI/ConditionalUI";
+import TaskManager from "./components/TaskManager/TaskManager";
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,8 @@ function App() {
       {/* <CountDown /> */}
       {/* <TogglePassword /> */}
       {/* <CounterLimits/> */}
-      <Tabs/>
+      {/* <Tabs/> */}
+      <TaskManager />
     </div>
   );
 }
