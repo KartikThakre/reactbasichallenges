@@ -45,3 +45,40 @@ const DynamicList = () => {
 }
 
 export default DynamicList
+
+
+
+//?🎯 So When Can We Use New Variable?
+
+//?You can use a new variable when:
+
+//?✔ You are not worried about async updates
+//?✔ It's a simple, single update
+//?✔ No rapid multiple updates happening
+
+//?For small apps → your version works fine.
+//?For real-world apps → functional update is safer.
+
+
+
+//🔥 Why Safer?
+
+// Imagine React batches updates (which it does).
+
+// If two handleAddItem() calls happen very fast, React might not update items immediately.
+
+// Then this:
+
+// const newItem = [...items, ...]
+
+
+// could use old items value 😬
+
+// ✅ Better Version (Recommended)
+// setItems(prevItems => [
+//   ...prevItems,
+//   { id: Date.now(), text: inputValue.trim() }
+// ]);
+
+
+// Now React guarantees you're using the latest state.

@@ -20,7 +20,9 @@ const FormValidation = () => {
     }
 
     const onChangeHandler = (e) => {
-        //for taking the dynamic values from multiple input fields
+      //? using a single state object like formData for multiple inputs is correct when the inputs are related (e.g., login/signup form) or you want to treat the form as one unit (submit/reset/validate as one object).
+      //?for taking the dynamic values from multiple input fields
+      
         const {name, value} = e.target;
         const newData = { ...formData, [name]: value };
             setFormData(newData);

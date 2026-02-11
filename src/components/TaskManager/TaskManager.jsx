@@ -21,6 +21,8 @@ const TaskManager = () => {
     setItems((prev) => prev.filter((item) => item.id !== id));
   };
 
+  //? Yes — you can use the other variable (items) and call setItems(items.map(...)), but using the functional updater (setItems(prev => ...)) is safer when the new state depends on the previous state.
+
   const handleToggleTask = (id) => {
     setItems((prev) =>
       prev.map((item) =>
